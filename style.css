@@ -1,0 +1,248 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Boogaloo', cursive;
+    font-size:20px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+header{
+    background: #F7F9FB;  
+    padding-top:20px;
+    padding-left:20px;
+    padding-bottom:20px;
+    box-shadow:2px 0px 2px 0px #555;
+    position:fixed;
+    width:100%;
+    z-index:9;
+    font-size:25px;
+}
+.wrapper{
+    width:80%;
+    margin:0 auto;
+}
+.navigation{
+ background-color:#fff;
+    
+    
+    
+  
+}
+.nav-item{
+    float:left;
+    padding-right:50px;
+    font-size:25px;
+    color:#000;
+}
+.nav-right{
+    float:right;
+}
+.nav-right > .nav-item{
+    float:left;
+}
+.logo{
+    font-family: 'Passion One', cursive;
+   
+}
+
+.side-bar{
+    position:absolute;
+    top:20%;
+    height:100%;
+    padding-left:10px;
+    background-color:#fff;
+    
+   
+}
+.landing-image{
+   text-align:center;
+   padding:100px;
+   background:url('9aa3451c2f19a6cc7f017dbfcecff738_mountain-silhouette-wallpaper-at-getdrawingscom-free-for-_4359-1900.jpeg');
+   background-repeat:no-repeat;
+   background-size:900px;
+   background-position:center;
+   width:87%;
+   height:200px;
+
+}
+.header{
+    text-align:center;
+    color:#000;
+    font-size:40px;
+    font-family: 'Passion One', cursive;
+}
+
+.tab{
+    width:79%;
+    margin:0 auto;
+    text-align:center;
+    border-radius:30px;
+    background: #FEFFFF;
+    box-shadow:0px 0px 5px #444;
+    color:gray;
+}
+.tab-item:nth-child(1){
+    width:40%;
+    float:left;
+    border-radius:30px 4px 4px 30px;
+    height:26px;
+    background:#D3E3FC;
+    color:#000;
+}
+.tab-item{
+    padding-top:20px;
+    padding-bottom:20px;
+    width:16%;
+    float:left;
+    
+}
+.tab-item > input[type='text']{
+    border:none;
+    outline:none;
+    background:transparent;
+    font-family: 'Boogaloo', cursive;
+ 
+    font-size:17px;
+}
+.tab-item > i{
+    color:gray;
+}
+input[type='date']{
+    text-decoration:none;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:gray;
+    font-family: 'Boogaloo', cursive;
+    font-size:17px;
+}
+.card{
+    width: 32%;
+    float:left;
+    border-radius:10px;
+    margin:5px;
+    box-shadow:0px 0px 5px #444;
+
+}
+.cards{
+    padding-left:20px;
+    width:80%;
+    margin:0 auto;
+    padding-top:50px;
+}
+.card-content{
+    padding:10px;
+}
+.card-header{
+    padding:20px;
+    font-size:20px;
+    font-family: 'Passion One', cursive;
+
+}
+
+.card > img{
+    border-radius:7px;
+} 
+.side-item > i {
+    width:70%;
+    
+}
+.side-item{
+    padding:40px 10px;
+    color:gray;
+    text-transform:uppercase;
+    font-family: 'Passion One', cursive;
+    color:#000;
+
+}
+.side-item > i{
+    font-size:30px;
+    color:#3B8BEB;
+    padding-bottom:10px;
+}
+a{
+    text-decoration:none;
+}
+select{
+    border:none;
+    outline:none;
+    font-family: 'Boogaloo', cursive;
+    font-size:17px;
+    color:gray;
+
+}
+@media only screen and (max-width:1000px){
+    .card{
+        width:100%;
+    }
+    .tab{
+        display:none;
+    }
+    .side-bar{
+        float:center;
+        position:relative;
+        padding-top:100px;
+        height:10px;
+    }
+          .side-item{
+
+              padding:1px;
+              font-size:17px;
+              width:100%;
+          }
+          .side-link{
+              float:left;
+          }
+
+    .landing-image{
+        background-position:center;
+        width:100%;
+    }
+}
